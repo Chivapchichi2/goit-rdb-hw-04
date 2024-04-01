@@ -1,0 +1,24 @@
+//Заповнення таблиці "authors"
+INSERT INTO LibraryManagement.authors (author_name) VALUES
+('Luke Skywalker'),
+('Padme Amidala');
+
+//Заповнення таблиці "genres"
+INSERT INTO LibraryManagement.genres (genre_name) VALUES
+('Fantasy'),
+('Detective');
+
+//Заповнення таблиці "books"
+INSERT INTO LibraryManagement.books (title, publication_year, author_id, genre_id) VALUES
+('Adventures in space', 2005, 1, 1),
+('The Secret of the Old Castle', 1998, 2, 2);
+
+//Заповнення таблиці "users"
+INSERT INTO LibraryManagement.users (username, email) VALUES
+('user1', 'user1@example.com'),
+('user2', 'user2@example.com');
+
+//Заповнення таблиці "borrowed_books"
+INSERT INTO LibraryManagement.borrowed_books (book_id, user_id, borrow_date, return_date) VALUES
+(1, 1, '2024-03-01', '2024-04-01'),
+(2, 2, '2024-02-15', '2024-03-15');
